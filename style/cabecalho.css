@@ -1,0 +1,32 @@
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.cabecalho {
+    padding: 0% 0% 0% 5%;
+    justify-content: space-between;
+    margin-top: 2em;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    font-family: var(--fonte-titulo);
+    font-size: 0.625rem;
+    color: var(--cor-fonte);
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 10em;
+}
+
+.cabecalho__menu__link {
+    font-size: 1.25rem;
+    font-family: var(--fonte-titulo);
+}
+
+.cabecalho__menu__link{
+    text-decoration: none;
+    color: var(--cor-fonte);
+}

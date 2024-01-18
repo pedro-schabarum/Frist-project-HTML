@@ -1,0 +1,9 @@
+.rodape{
+    padding: 24px;
+    color: var(--cor-fonte);
+    font-family: var(--fonte-roda);
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5rem;
+    position: 100%;
+}
