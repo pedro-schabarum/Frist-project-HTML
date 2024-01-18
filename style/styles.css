@@ -4,9 +4,10 @@
 
 :root {
     --cor-fonte: #FFE7E1;
-    --cor-fundo: #7F7065;
+    --cor-cabecalho: #7F7065;
+    --cor-fundo: #988578;
     --cor-detaque: #BFADA8;
-    --cor-borda: #EBE396;
+    --cor-borda: #7b6c61;
     --cor-press-botao: #7F7065;
     --cor-botao: #807370;
     --cor-card: #574C44;
@@ -47,12 +48,12 @@ span {
     justify-content: space-evenly;
 }
 
-.texto__conteudo {
-    margin: 0 0 1em 4em;
+.texto__conteudo, .musica__conteudo {
+    padding: 2em;
+    border-radius: 1em;
     background-color: var(--cor-card);
     display: flex;
     flex-direction: column;
-
 }
 
 .conteudo {
