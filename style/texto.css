@@ -12,14 +12,22 @@
     align-items: center;
 }
 
-.texto__conteudo, .musica__conteudo {
+.texto__conteudo, .texto__musica{
     padding: 2em;
     border-radius: 1em;
     background-color: var(--cor-card);
-    display: flex;
-    flex-direction: column;
     gap: 0.75em;
     width: 100%;
+}
+
+.texto__conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.texto__musica {
+    display: flex;
+    flex-direction: row;
 }
 
 .texto__titulo1 {
@@ -43,11 +51,8 @@
 }
 
 .texto__link__botao {
-    display: flex;
-    justify-content: center;
     background-color: var(--cor-botao);
     width: 50%;
-    text-align: center;
     border-radius: 8px;
     font-size: 1.5rem;
     padding: 1.2em 0;
@@ -55,6 +60,11 @@
     color: var(--cor-fonte);
 }
 
+.texto__titulo__musica {
+    padding: 1em;
+    font-size: 1em;
+    font-style: oblique;
+}
 
 a:hover {
     background-color: var(--cor-press-botao);
