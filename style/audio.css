@@ -1,0 +1,21 @@
+/* Estilo para o contêiner do player de áudio */
+.audio-player {
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+/* Estilos adicionais podem ser aplicados ao player de áudio, se necessário */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Estilizando os controles do player de áudio */
+audio::-webkit-media-controls-panel {
+    background-color: var(--cor-botao);
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: var(--cor-fonte);
+}

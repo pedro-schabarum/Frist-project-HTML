@@ -3,6 +3,7 @@
 @import url('cabecalho.css');
 @import url('rodape.css');
 @import url('texto.css');
+@import url('audio.css');
 
 :root {
     --cor-fonte: #FFE7E1;

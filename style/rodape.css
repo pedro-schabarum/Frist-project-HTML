@@ -26,6 +26,11 @@
     border-left: 1px solid var(--cor-borda);
 }
 
+.rodape__topicos{
+    display: flex;
+    flex-direction: row;
+}
+
 hr{
     border: 1px solid var(--cor-borda);
 }
