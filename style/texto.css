@@ -21,7 +21,12 @@
     align-items: center;
 }
 
-.texto__conteudo, .texto__musica{
+.img__coluna{
+    width: 100%;
+    border-radius: 1em;
+}
+
+.texto__conteudo{
     padding: 2em;
     border-radius: 1em;
     background-color: var(--cor-card);
@@ -39,6 +44,18 @@
     flex-direction: row;
 }
 
+.texto__lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.texto__lista__item{
+    margin-bottom: 2em;
+}
+
 .texto__titulo1 {
     font-size: 1.5em;
     font-family: var(--fonte-titulo);
@@ -48,15 +65,17 @@
 .texto__paragrafo {
     font-style: italic;
     text-justify: distribute;
+    text-decoration: none;
     font-size: 1.2em;
     font-family: var(--fonte-texto);
+    color: var(--cor-fonte);
 }
 
 .texto__link {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 32px;
+    gap: 2em;
 }
 
 .texto__link__botao {
@@ -64,7 +83,7 @@
     width: 50%;
     border-radius: 8px;
     font-size: 1.5rem;
-    padding: 1.2em 0;
+    padding: 1em 0.1em;
     text-decoration: none;
     color: var(--cor-fonte);
 }

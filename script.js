@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
             "mp3/Valsa do pardal orquestra.mp3",
             "mp3/Valsa em Amenor.mp3",
             "mp3/Valsa em Cmenor.mp3",
-            "mp3/Walk trought the Mountain.mp3"
+            "mp3/Walk trought the Mountain.mp3",
+            "mp3/Aquele com piano e a harpa.mp3"
         ];
 
         // Sorteia um índice aleatório para escolher uma música
