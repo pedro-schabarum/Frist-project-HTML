@@ -1,5 +1,5 @@
 .rodape {
-    padding: 24px;
+    padding: 2em;
     color: var(--cor-fonte);
     font-family: var(--fonte-roda);
     position: 100%;
@@ -33,4 +33,14 @@
 
 hr{
     border: 1px solid var(--cor-borda);
+}
+
+@media screen and (max-width: 1024px){
+
+    .rodape__lista__link {
+        font-size: 1em;
+    }
+    .rodape__texto {
+        font-size: 1em;
+    }
 }

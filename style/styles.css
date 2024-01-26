@@ -4,12 +4,13 @@
 @import url('rodape.css');
 @import url('texto.css');
 @import url('audio.css');
+@import url('acordion.css');
 
 :root {
     --cor-fonte: #FFE7E1;
     --cor-cabecalho: #7F7065;
     --cor-fundo: #988578;
-    --cor-detaque: #BFADA8;
+    --cor-destaque: #BFADA8;
     --cor-borda: #7b6c61;
     --cor-press-botao: #7F7065;
     --cor-botao: #807370;
@@ -20,21 +21,14 @@
 }
 
 body {
+    height: 100vh;
     background-color: var(--cor-fundo);
     color: var(--cor-fonte);
-    height: 100vh;
 }
 
 .destaque_titulo {
-    color: var(--cor-detaque);
+    color: var(--cor-destaque);
 }
-
-span {
-    color: var(--cor-fonte);
-    border: 0px solid var(--cor-borda);
-    padding: 0px;
-}
-
 
 .conteudo {
     width: 80vw;
@@ -42,7 +36,6 @@ span {
     align-items: flex-start;
     gap: 40px;
 }
-
 
 .catalogo {
     font-size: 0.9375rem;
