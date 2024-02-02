@@ -1,5 +1,6 @@
 /* Estilo para o contêiner do player de áudio */
 .audio-player {
+    display: block;
     max-width: 400px;
     margin: 50px auto;
 }

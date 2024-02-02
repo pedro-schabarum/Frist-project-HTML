@@ -5,6 +5,7 @@
 @import url('texto.css');
 @import url('audio.css');
 @import url('acordion.css');
+@import url('carrosel.css');
 
 :root {
     --cor-fonte: #FFE7E1;
