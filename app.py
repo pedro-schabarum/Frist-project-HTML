@@ -1,9 +1,11 @@
 from flask import Flask, render_template, request, redirect, session, flash, url_for
 
 class Lista_musicas:
-    def __init__(self, titulo, url_foto) -> None:
+    def __init__(self, titulo, url_foto, url_page = '', conteudo_page = []) -> None:
         self.titulo=titulo
         self.url_foto=url_foto
+        self.url_page=url_page
+        self.conteudo_page=conteudo_page
 
 musicas = [
     Lista_musicas(titulo="Prelúdio nº 1", url_foto="assets/prelude1.jpg"),
@@ -41,10 +43,9 @@ def index():
 def composicoes():
     return render_template('composition.html', musicas=musicas, musicas_JM=musicas_JM)
 
-@app.route('/musica', methods=['POST',])
+@app.route('/musica')
 def musica():
-
-    musica = 'index'
+    musica = 'index.html'
     return render_template(musica)
 
 
