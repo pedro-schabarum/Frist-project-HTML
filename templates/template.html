@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{titulo}} Piano_melodic</title>
+    <link rel="icon" href="{{url_for('static', filename='assets/logo.png')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='style/styles.css')}}">
+</head>
+
+<body>
+    <header>
+        <nav class="cabecalho">
+            <div class="cabecalho__logo">
+                <a href="javascript:history.go(-1)"><img class="cabecalho__imagem logo" src="{{url_for('static', filename='assets/piano melodic.jpg')}}" alt="perfil piano melodic" ></a>
+                <h1 class="cabecalho__titulo">Piano_melodic</h1>
+            </div>
+            <ul class="cabecalho__menu">
+                <li><a href="{{url_for('index')}}" class="cabecalho__menu__link">Home</a></li>
+                <li><a href="{{url_for('composicoes')}}" class="cabecalho__menu__link">Composições</a></li>
+            </ul>
+
+        </nav>
+    </header>
+    <main class="texto">
+
+        {% block conteudo %} {% endblock %}
+
+        <aside class="coluna_secundaria">
+            <section class="texto__conteudo">
+                <img src="{{url_for('static', filename='assets/logo.png')}}" alt="piano_melodic" class="img__coluna">
+            </section>
+            <section class="texto__conteudo">
+                <a class="texto__paragrafo" href="#">Ultimos lançamentos</a>
+            </section>
+                <div class="audio-player">
+                    <audio id="audioPlayer" autoplay controls></audio>
+                </div>
+            <script src="{{url_for('static', filename='js/script.js')}}"></script>
+        </aside>
+    </main>
+    <footer class="rodape">
+        <hr>
+        <p class="rodape__texto">Sem a música a vida seria um erro - Friedrich Nietzsche</p>
+        <div>
+            <ul class="rodape__lista">
+                <li>
+                    <a class="rodape__lista__link" href="https://www.instagram.com/piano_melodic/" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <a class="rodape__lista__link" href="#" target="_blank">YouTube</a>
+                </li>
+                <li>
+                    <a class="rodape__lista__link" href="#" target="_blank">Pinterest</a>
+                </li>
+                <li>
+                    <a class="rodape__lista__link" href="#" target="_blank">Musescore</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -91,6 +91,11 @@
     font-style: oblique;
 }
 
+textarea{
+    width: 100%;
+    height: 92px;
+}
+
 
 
 @media screen and (max-width: 1024px) {

@@ -1,0 +1,41 @@
+{% extends 'template.html' %}
+{% block conteudo%}
+<div class="coluna_primaria">
+    <section class="texto__conteudo">
+        <h1 class="texto__titulo1">{{titulo}}</h1>
+        {% if textos %} 
+            {% for texto in textos %}
+            <p class="texto__paragrafo">{{ texto }}</p>
+            {% endfor %}
+            </ul>
+        {% endif %}
+        <p class="texto__paragrafo">"Élégie pour un Amour" é uma peça para piano que transcende as fronteiras do
+            tempo, como uma melodia que flutua entre o passado e o presente, carregando consigo a tristeza de um
+            amor perdido. A delicadeza das notas ressoa como lágrimas silenciosas sobre as teclas, contando a
+            história de uma paixão que deixou marcas indeléveis na alma.
+        <p class="texto__paragrafo">Iniciando com uma introdução melancólica, a música revela um tema principal
+            que evoca a beleza efêmera do amor. As notas fluem suavemente, como palavras não ditas, expressando
+            a complexidade das emoções entrelaçadas em cada acorde. Este tema é repetido, como se recordasse os
+            momentos preciosos que agora habitam apenas na memória.</p>
+        <p class="texto__paragrafo">À medida que a melodia avança, a peça mergulha em variações mais profundas e
+            reflexivas. As notas se tornam mais intensas, refletindo a jornada emocional do amor perdido. Cada
+            acorde é um suspiro melódico que ecoa a tristeza, mas também a beleza nostálgica do que já foi.
+        <p class="texto__paragrafo">Num clímax emocional, a "Élégie pour un Amour" retorna ao tema inicial, mas
+            com uma intensidade renovada. O pianista tece uma tapeçaria sonora que captura a essência da
+            saudade, como se as teclas se tornassem pontes entre o passado e o presente. O último acorde ressoa
+            como uma despedida, deixando uma sensação de melancolia flutuando no ar.</p>
+        <p class="texto__paragrafo">Esta peça para piano, "Élégie pour un Amour", é uma obra de arte sonora que
+            transmite a profundidade e a complexidade das emoções ligadas ao amor perdido. Cada nota é um
+            suspiro poético que convida os ouvintes a explorar as nuances da saudade e a beleza melancólica que
+            ela carrega.</p>
+    </section>
+    <section class="texto__conteudo">
+        <div>
+            <form action="" method="post">
+                <textarea type="textarea" name="comentario" id=""></textarea>
+                <button type="submit">Comentar</button>
+            </form>
+        </div>
+    </section>
+</div>
+{% endblock%}  
